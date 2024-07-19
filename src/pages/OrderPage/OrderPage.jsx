@@ -144,7 +144,8 @@ const OrderPage = () => {
 
   const totalPriceMemo = useMemo(() => {
     return (
-      Number(priceMemo) - Number(priceDiscountMemo) + Number(diliveryPriceMemo)
+      Number(priceMemo)  + Number(diliveryPriceMemo) 
+      // - Number(priceDiscountMemo)
     );
   }, [priceMemo, priceDiscountMemo, diliveryPriceMemo]);
 
